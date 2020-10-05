@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.fxmisc.richtext.InlineCssTextArea?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller2">
+   <children>
+      <Pane prefHeight="52.0" prefWidth="600.0" style="-fx-background-color: WHITE;">
+         <children>
+            <ImageView fx:id="Left_Arrow" fitHeight="38.0" fitWidth="38.0" layoutX="249.0" layoutY="6.0">
+               <image>
+                  <Image url="@../../../../../Desktop/소공/화살표/55-1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Right_Arrow" fitHeight="38.0" fitWidth="38.0" layoutX="300.0" layoutY="6.0">
+               <image>
+                  <Image url="@../../../../../Desktop/소공/화살표/55.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Down_Arrow_Left" fitHeight="38.0" fitWidth="38.0" layoutX="127.0" layoutY="6.0">
+               <image>
+                  <Image url="@../../../../../Desktop/소공/화살표/55-2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Up_Arrow_Left" fitHeight="38.0" fitWidth="38.0" layoutX="70.0" layoutY="6.0">
+               <image>
+                  <Image url="@../../../../../Desktop/소공/화살표/55-3.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Down_Arrow_Right" fitHeight="38.0" fitWidth="38.0" layoutX="491.0" layoutY="6.0">
+               <image>
+                  <Image url="@../../../../../Desktop/소공/화살표/55-2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Up_Arrow_Right" fitHeight="38.0" fitWidth="38.0" layoutX="433.0" layoutY="6.0">
+               <image>
+                  <Image url="@../../../../../Desktop/소공/화살표/55-3.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <SplitPane dividerPositions="0.5" prefHeight="669.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" SplitPane.resizableWithParent="false">
+               <children>
+                  <ScrollPane prefHeight="667.0" prefWidth="296.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="664.0" prefWidth="295.0">
+                           <children>
+                              <InlineCssTextArea fx:id="T1" prefHeight="667.0" prefWidth="296.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" SplitPane.resizableWithParent="false">
+               <children>
+                  <ScrollPane prefHeight="667.0" prefWidth="296.0">
+                     <content>
+                        <VBox prefHeight="666.0" prefWidth="295.0">
+                           <children>
+                              <InlineCssTextArea fx:id="T2" prefHeight="692.0" prefWidth="295.0" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="88.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" SplitPane.resizableWithParent="false">
+               <children>
+                  <SplitPane dividerPositions="0.5" prefHeight="39.0" prefWidth="598.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" SplitPane.resizableWithParent="false">
+                           <children>
+                              <Button id="Edit" layoutX="205.0" layoutY="4.0" mnemonicParsing="false" onAction="#Edit_Left" prefHeight="29.0" prefWidth="69.0" text="Edit" />
+                              <Button id="Load" layoutX="113.0" layoutY="4.0" mnemonicParsing="false" onAction="#Load_Left" prefHeight="29.0" prefWidth="69.0" text="Load" />
+                              <Button id="Save" layoutX="25.0" layoutY="4.0" mnemonicParsing="false" onAction="#Save_Left" prefHeight="29.0" prefWidth="69.0" text="Save" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" SplitPane.resizableWithParent="false">
+                           <children>
+                              <Button layoutX="28.0" layoutY="4.0" mnemonicParsing="false" onAction="#Save_Right" prefHeight="29.0" prefWidth="69.0" text="Save" />
+                              <Button layoutX="120.0" layoutY="4.0" mnemonicParsing="false" onAction="#Load_Right" prefHeight="29.0" prefWidth="69.0" text="Load" />
+                              <Button layoutX="205.0" layoutY="4.0" mnemonicParsing="false" onAction="#Edit_Right" prefHeight="29.0" prefWidth="69.0" text="Edit" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" SplitPane.resizableWithParent="false">
+               <children>
+                  <Button layoutX="47.0" layoutY="5.0" mnemonicParsing="false" onAction="#Compare" prefHeight="29.0" prefWidth="139.0" text="Compare" />
+                  <Button layoutX="236.0" layoutY="5.0" mnemonicParsing="false" onAction="#Copy_to_Left" prefHeight="29.0" prefWidth="139.0" text="Copy to Left" />
+                  <Button layoutX="413.0" layoutY="5.0" mnemonicParsing="false" onAction="#Copy_to_Right" prefHeight="29.0" prefWidth="139.0" text="Copy to Right" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</VBox>
